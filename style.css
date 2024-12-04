@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.labyrinthe {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: 50px 50px 50px;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #f0f0f0;
+}
+
+.controls a:hover {
+  color: #007bff;
+}
+
+.controls .up {
+  grid-column: 2;
+}
+
+.controls .down {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.controls .left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.controls .right {
+  grid-column: 3;
+  grid-row: 2;
+}
